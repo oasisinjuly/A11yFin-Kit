@@ -32,15 +32,15 @@ export const A11yAdaptiveEngine: React.FC = () => {
   };
 
   return (
-    <section className="p-5 border-2 border-indigo-200 rounded-2xl bg-indigo-50/50 space-y-4">
+    <section className="p-5 border-2 border-indigo-200 rounded-2xl bg-indigo-50/40 space-y-4">
       <div className="flex items-center gap-2">
-        <Sparkles className="w-5 h-5 text-indigo-600" />
-        <h2 className="font-bold text-lg text-indigo-950">
+        <Sparkles className="w-5 h-5 text-[var(--color-fin-primary)]" />
+        <h2 className="font-bold text-lg text-slate-900">
           AI 가변형 UI 프로필 추천 엔진
         </h2>
       </div>
 
-      <p className="text-xs text-indigo-800 font-medium">
+      <p className="text-xs text-slate-700 font-medium">
         사용자의 접근 요구사항에 맞추어 UI 구성 요소의 크기, 명암비, 간격을 최적화합니다.
       </p>
 
@@ -50,7 +50,7 @@ export const A11yAdaptiveEngine: React.FC = () => {
           onClick={() => handleApplyProfile("default", "기본")}
           className={`p-3 rounded-xl border text-left transition-all min-h-[48px] ${
             activeProfile === "default"
-              ? "bg-indigo-600 text-white font-bold border-indigo-600 shadow-sm"
+              ? "bg-[var(--color-fin-primary)] text-white font-bold border-[var(--color-fin-primary)] shadow-sm"
               : "bg-white text-slate-700 border-slate-200 hover:bg-slate-50"
           }`}
         >
@@ -63,7 +63,7 @@ export const A11yAdaptiveEngine: React.FC = () => {
           onClick={() => handleApplyProfile("lowVision", "저시력자")}
           className={`p-3 rounded-xl border text-left transition-all min-h-[48px] ${
             activeProfile === "lowVision"
-              ? "bg-indigo-600 text-white font-bold border-indigo-600 shadow-sm"
+              ? "bg-[var(--color-fin-primary)] text-white font-bold border-[var(--color-fin-primary)] shadow-sm"
               : "bg-white text-slate-700 border-slate-200 hover:bg-slate-50"
           }`}
         >
@@ -78,7 +78,7 @@ export const A11yAdaptiveEngine: React.FC = () => {
           onClick={() => handleApplyProfile("senior", "고령층")}
           className={`p-3 rounded-xl border text-left transition-all min-h-[48px] ${
             activeProfile === "senior"
-              ? "bg-indigo-600 text-white font-bold border-indigo-600 shadow-sm"
+              ? "bg-[var(--color-fin-primary)] text-white font-bold border-[var(--color-fin-primary)] shadow-sm"
               : "bg-white text-slate-700 border-slate-200 hover:bg-slate-50"
           }`}
         >
@@ -93,7 +93,7 @@ export const A11yAdaptiveEngine: React.FC = () => {
           onClick={() => handleApplyProfile("motorAssist", "정밀조작 보조")}
           className={`p-3 rounded-xl border text-left transition-all min-h-[48px] ${
             activeProfile === "motorAssist"
-              ? "bg-indigo-600 text-white font-bold border-indigo-600 shadow-sm"
+              ? "bg-[var(--color-fin-primary)] text-white font-bold border-[var(--color-fin-primary)] shadow-sm"
               : "bg-white text-slate-700 border-slate-200 hover:bg-slate-50"
           }`}
         >
